@@ -1,0 +1,32 @@
+/* meet our team */
+
+
+.team i {
+    font-size: 26px;
+    color: #000000;
+}
+
+.team p {
+    font-weight: 500;
+}
+
+.team .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #364757;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.team .card:hover {
+    background: #364757; /* Changed to #364757 */
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #364757; /* Changed to #364757 */
+}
+
+.team .card:hover h3,
+.team .card:hover i {
+    color: #fff;
+}

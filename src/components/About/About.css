@@ -1,0 +1,31 @@
+.about-us {
+    overflow-x: hidden;
+  }
+
+  /* Adjust padding to avoid overflow */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure row and column gaps do not cause overflow */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Remove potential negative margins on rows */
+  .row.g-5 {
+    margin-left: -0.75rem; /* Reset to prevent overflow */
+    margin-right: -0.75rem; /* Reset to prevent overflow */
+  }
+  
+  .col {
+    padding-left: 0.75rem; /* Match gutter padding */
+    padding-right: 0.75rem; /* Match gutter padding */
+  }
+/* General overflow handling */
+body, html {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }  

@@ -1,0 +1,44 @@
+/* Our Mission Section */
+.our-mission-section {
+    background-color: #F3F4F6; /* Light grey background to blend with the grey theme */
+    color: #384959; /* Text color to match your grey combination theme */
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.our-mission-section h1 {
+    font-size: 2.8rem;
+    color: #384959;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.our-mission-section .mission-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #5a6e7f; /* Grey color for better readability */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the mission section */
+.our-mission-section:hover h1 {
+    color: #5a6e7f;
+}
+
+.our-mission-section:hover .mission-description {
+    color: #384959; /* Darker shade on hover */
+}
+
+.carousel-item img {
+    height: 400px; /* Adjust image height */
+    object-fit: cover; /* Make sure images fit nicely */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for caption */
+    padding: 10px;
+    border-radius: 8px;
+}

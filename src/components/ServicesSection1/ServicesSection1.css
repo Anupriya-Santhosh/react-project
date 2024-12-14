@@ -1,0 +1,173 @@
+ /* Our Services Section */
+ .our-services-section {
+    background: linear-gradient(135deg, #f0f4f8, #e8ecf1);
+    padding: 80px 0;
+    animation: fadeInSection 1s ease-out;
+    overflow: hidden;
+  }
+  
+  .services-title {
+    font-size: 3rem;
+    color: #2b3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+    animation: slideInTitle 1s ease-out;
+    letter-spacing: 2px;
+  }
+  
+  .services-description {
+    font-size: 1.25rem;
+    color: #546375;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInText 1.2s ease-out;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    opacity: 0;
+    animation: fadeInOffers 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .service-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
+    position: relative;
+    overflow: hidden;
+    animation: cardEntrance 0.8s ease-out;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f9fafb, #ffffff);
+  }
+  
+  .service-icon-wrapper {
+    background: linear-gradient(135deg, #2b3e50, #546375);
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+    font-size: 2.5rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 0.8s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover .service-icon-wrapper {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-title {
+    font-size: 1.6rem;
+    color: #2b3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    animation: fadeInText 1.2s ease-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #6a7b8c;
+    line-height: 1.7;
+    animation: fadeInText 1.5s ease-out;
+    margin-bottom: 20px;
+  }
+  
+  /* Add hover effect for description */
+  .service-card:hover .service-description {
+    color: #2b3e50;
+    font-weight: 500;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInOffers {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes cardEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

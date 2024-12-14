@@ -1,0 +1,16 @@
+/* src/components/Reviews.css */
+
+.review-img {
+    width: 70px; /* Set the width of the image */
+    height: 70px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+  
+  .review-card {
+    transition: transform 0.3s ease; /* Optional zoom effect */
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  

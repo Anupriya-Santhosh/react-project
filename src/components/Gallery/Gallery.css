@@ -1,0 +1,52 @@
+/* gallery section */
+.gallery {
+    background-color: #222; /* Optional background color */
+}
+
+.gallery-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: #fff; /* White text color */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+h2 {
+    color: #fff; /* White text for the section title */
+}
+
+.btn-success {
+    background-color: #384959; /* Bootstrap primary color */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #384959; /* Darker shade on hover */
+}
+
+
+

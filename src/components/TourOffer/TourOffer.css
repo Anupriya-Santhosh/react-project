@@ -1,0 +1,225 @@
+ /* Enhanced Special Offers Section with Animations */
+ .special-offers-section {
+    background: linear-gradient(to bottom, #e0e6ea, #f4f5f6); /* Light gradient background */
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInSection 1s ease-out; /* Fade-in animation */
+  }
+  
+  /* Keyframes for section fade-in */
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .special-offers-overlay {
+    /* background: url('images/pattern.png') repeat; Background pattern image (optional) */
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .special-offers-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .special-offers-title {
+    font-size: 3rem;
+    color: #2b3e50;
+    margin-bottom: 25px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+    animation: slideInTitle 1s ease-out;
+  }
+  
+  /* Keyframes for title slide-in effect */
+  @keyframes slideInTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .special-offers-description {
+    font-size: 1.25rem;
+    color: #546375;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    animation: fadeInText 1.2s ease-out;
+  }
+  
+  /* Keyframes for description fade-in */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .offers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    opacity: 0;
+    animation: fadeInOffers 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Keyframes for offers fade-in */
+  @keyframes fadeInOffers {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .offer-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 280px;
+    max-width: 350px;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+    position: relative;
+    animation: cardEntrance 0.8s ease-out; /* Slide-in effect for cards */
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  /* Keyframes for card entrance animation */
+  @keyframes cardEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .offer-image-wrapper {
+    position: relative;
+  }
+  
+  .offer-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.9); /* Slightly darker for better text contrast */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .offer-card:hover .offer-image {
+    filter: brightness(1); /* Brighten image on hover */
+  }
+  
+  .offer-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff5a5f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 0.8s ease-out;
+  }
+  
+  /* Keyframes for bounce effect on badges */
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .offer-details {
+    padding: 25px;
+    position: relative;
+  }
+  
+  .offer-details h4 {
+    font-size: 1.8rem;
+    color: #2b3e50;
+    margin-bottom: 12px;
+    animation: fadeInText 1.2s ease-out;
+  }
+  
+  .offer-details p {
+    font-size: 1rem;
+    color: #6a7b8c;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .offer-details .btn {
+    background-color: #2b3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .offer-details .btn-glow {
+    background-color: #ff5a5f;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(255, 90, 95, 0.3); /* Glowing button effect */
+    animation: pulse 2s infinite; /* Pulse animation for glow effect */
+  }
+  
+  /* Keyframes for pulsing glow effect */
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0px 8px 15px rgba(255, 90, 95, 0.3);
+    }
+    50% {
+      box-shadow: 0px 12px 25px rgba(255, 90, 95, 0.4);
+    }
+  }
+  
+  .offer-details .btn-glow:hover {
+    background-color: #ff6e72;
+    box-shadow: 0px 12px 20px rgba(255, 90, 95, 0.4); /* Brighter on hover */
+    transform: scale(1.05); /* Slight scale-up on hover */
+  }

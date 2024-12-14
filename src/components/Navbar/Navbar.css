@@ -1,0 +1,84 @@
+/*navbar-section*/
+.navbar {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width navbar */
+    height: 60px; /* Fixed height */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 0 20px;
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+.navbar-brand img {
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107; /* Change to your desired hover color */
+}
+
+.offcanvas-custom {
+    background-color: black;
+    color: white;
+}
+
+.offcanvas-custom .nav-link {
+    color: white;
+}
+
+.offcanvas-custom .nav-link:hover {
+    color: black; /* Change to your desired hover color */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    position: relative; /* For positioning lines */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of the lines */
+    background-color: rgb(6, 7, 6); /* Color of the lines */
+    border-radius: 2px; /* Optional: rounded edges */
+    position: absolute; /* Position lines */
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: 0; /* Position the top line */
+}
+
+.navbar-toggler-icon span {
+    top: 50%; /* Position the middle line */
+    transform: translateY(-50%); /* Center the middle line */
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0; /* Position the bottom line */
+}

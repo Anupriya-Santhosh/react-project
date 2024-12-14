@@ -1,0 +1,72 @@
+/* Ensure the map is responsive */
+.map-container {
+    position: relative;  /* Change from absolute to relative positioning */
+    width: 100%;
+    height: 400px;  /* Adjust the height as needed */
+    margin-bottom: 30px;  /* Add space below the map */
+}
+
+    .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact .form-label {
+    font-weight: bold;
+  }
+  
+  /* Adjust iframe for smaller screens */
+  .contact iframe {
+    width: 100%;
+    height: 250px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 2rem 0.5rem;
+    }
+  
+    .contact h1 {
+      font-size: 2rem;
+    }
+  
+    .contact h4 {
+      font-size: 1.25rem;
+    }
+  
+    .contact iframe {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact {
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .contact h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contact h4 {
+      font-size: 1rem;
+    }
+  }
+  

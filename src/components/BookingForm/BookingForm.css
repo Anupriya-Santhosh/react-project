@@ -1,0 +1,5 @@
+.booking-form-wrapper {
+    border: 1px solid #384959; /* Light gray border */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #384959; /* White background */
+}
